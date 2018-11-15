@@ -8,6 +8,7 @@ import java.io.Serializable;
 @SessionScoped
 public class MyGame implements Serializable {
     private User user;
+    private Game game;
 
     public User getUser() {
         return user;
@@ -15,5 +16,13 @@ public class MyGame implements Serializable {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
     }
 }
